@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-primary-solid-10: #fb8d04;
+    --color-primary-solid-20: #fb9517;
+    --color-primary-solid-30: #fba336;
+    --color-primary-solid-40: #fcb154;
+    --color-primary-solid-50: #fedaae;
+    --color-primary-solid-60: #ffedd6;
+    --color-primary-solid-70: #fff6eb;
+  
+    --color-secondary-solid-10: #091a2b;
+    --color-secondary-solid-20: #1c2b3b;
+    --color-secondary-solid-30: #3a4755;
+    --color-secondary-solid-40: #58636f;
+    --color-secondary-solid-50: #afb5ba;
+    --color-secondary-solid-60: #d7dadd;
+    --color-secondary-solid-70: #ebedee;
+  
+    --color-invert-background-solid-10: #192635;
+    --color-invert-background-solid-20: #2b3a48;
+    --color-invert-background-solid-30: #091a2b;
+    --color-invert-background-solid-40: #2b3a48;
+  
+    --color-support-solid-first: #2b3a48;
+  
+    --color-invert-component-solid-10: rgba(255, 255, 255, 0.99);
+    --color-invert-component-tr-20: rgba(255, 255, 255, 0.9);
+    --color-invert-component-tr-30: rgba(255, 255, 255, 0.78);
+    --color-invert-component-tr-40: rgba(255, 255, 255, 0.66);
+    --color-invert-component-tr-50: rgba(255, 255, 255, 0.3);
+    --color-invert-component-tr-60: rgba(255, 255, 255, 0.15);
+    --color-invert-component-tr-70: rgba(255, 255, 255, 0.07);
+    --color-invert-component-tr-80: rgba(255, 255, 255, 0.03);
+    --color-invert-component-tr-90: rgba(255, 255, 255, 0);
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: sans-serif;
+    background-color: var(--color-secondary-solid-10); 
+  }
