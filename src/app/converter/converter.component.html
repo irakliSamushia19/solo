@@ -1,0 +1,47 @@
+<div class="converter-container">
+    <h1>Binary Converter</h1>
+  
+    <div class="form-group">
+      <label for="value">Enter Value:</label>
+      <input id="value" [(ngModel)]="inputValue" type="text" />
+    </div>
+  
+    <div class="form-group">
+      <label>From Format:</label>
+      <select [(ngModel)]="inputFormat">
+        <option value="dec">Decimal</option>
+        <option value="sm">Sign-Magnitude</option>
+        <option value="oc">One's Complement</option>
+        <option value="tc">Two's Complement</option>
+        <option value="ex">Excess-N</option>
+        <option value="bin">Binary</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label>To Format:</label>
+      <select [(ngModel)]="outputFormat">
+        <option value="dec" *ngIf="inputFormat !== 'dec'">Decimal</option>
+        <option value="sm">Sign-Magnitude</option>
+        <option value="oc">One's Complement</option>
+        <option value="tc">Two's Complement</option>
+        <option value="ex">Excess-N</option>
+        <option value="bin">Binary</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label>Bit Limit:</label>
+      <input type="number" [(ngModel)]="bitLimit" min="2" />
+    </div>
+  
+    <button (click)="onConvert()">Convert</button>
+  
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  
+    <div class="result" *ngIf="result && !errorMessage">
+      <p>{{ result }}</p>
+    </div>
+  </div>
