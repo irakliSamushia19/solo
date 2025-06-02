@@ -1,0 +1,25 @@
+.converter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+
+  > app-converter,
+  > app-currency-converter {
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .converter {
+    flex-direction: column;
+
+    > app-converter,
+    > app-currency-converter {
+      max-width: 100%;
+    }
+  }
+}

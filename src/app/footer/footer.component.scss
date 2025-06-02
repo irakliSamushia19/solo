@@ -1,0 +1,43 @@
+.app-footer {
+  background-color: var(--color-secondary-solid-20);
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 1rem;
+
+      h3, h4 {
+        margin-bottom: 0.8rem;
+        color: var(--color-primary-solid-10);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: #ddd;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
